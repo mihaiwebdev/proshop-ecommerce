@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('PRODUCTION_SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 'web-production-83f0.up.railway.app']
+                 'pro-shop.up.railway.app']
 
 
 # Application definition
