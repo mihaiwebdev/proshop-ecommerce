@@ -24,11 +24,11 @@ const Product = ({ product }) => {
             </Link>
 
             <Card.Body>
-                <a href={`/product/${product._id}`}>
+                <Link to={`/product/${product._id}`}>
                         <Card.Title as='div'>
                             <strong>{newName}</strong>
                         </Card.Title>
-                </a>
+                </Link>
 
                 <Card.Text as='div'>
                     <div className='my-3'>

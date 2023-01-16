@@ -1,4 +1,3 @@
-
 export const productListReducer = (state = { products: [] }, action) => {
     switch(action.type){
         case 'PRODUCT_LIST_REQUEST':
@@ -31,7 +30,7 @@ export const productDetailsReducer = (state = { product: {reviews: []} }, action
         case 'PRODUCT_DETAILS_REQUEST':
             return {
                 loading: true,
-                ...state
+                product: {}
             }
         case 'PRODUCT_DETAILS_SUCCESS':
             return {
