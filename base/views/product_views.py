@@ -20,7 +20,8 @@ def get_products(request):
         query = ''
 
     # Get all products that have the query value in their name
-    products = Product.objects.filter(name__icontains=query)
+    products = Product.objects.filter(
+        name__icontains=query).order_by('createdAt')
 
     # Get the page Number from url
     page = request.query_params.get('page')
